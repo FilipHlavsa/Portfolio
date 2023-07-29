@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filip Hlavsa - Work</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  
+
+
+  <header class="header">
+    <div class="header-left">
+      <a>FILIP HLAVSA</a>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="work.html" class="active">WORK</a></li>
+          <li><a href="about.html">ME</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <a href="#"><img src="Portfolio WEB2.png" alt="Image 2" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB3.png" alt="Image 3" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB4.png" alt="Image 3" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB5.png" alt="Image 3" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB6.png" alt="Image 3" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB7.png" alt="Image 3" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB8.png" alt="Image 3" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB9.png" alt="Image 3" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB10.png" alt="Image 3" class="work-image"></a>
+      <a href="#"><img src="Portfolio WEB11.png" alt="Image 3" class="work-image"></a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2023 Filip Hlavsa
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('scroll-button').addEventListener('click', function(event) {
+      event.preventDefault(); // Zabrání výchozímu chování odkazu (přesměrování na jinou stránku)
+  
+      // Provede posunutí stránky o 50 pixelů dolů (můžete tento počet upravit podle potřeby)
+      window.scrollBy({
+        top: 50,
+        behavior: 'smooth' // Plynulé posunutí
+      });
+    });
+  </script>
+  
+</body>
+</html>

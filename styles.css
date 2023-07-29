@@ -1,0 +1,143 @@
+/* Základní styly */
+@font-face {
+  font-family: "AvenirNext";
+  src: url(Fonts/AvenirNextRegular.otf) format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url(Fonts/AvenirNextBold.otf) format('opentype');
+  font-weight: bold;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "AvenirNext";
+  background-color: #efefef;
+  overflow-x: hidden; /* Zabrání horizontálnímu scrollování */
+}
+
+
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Hlavička */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 3),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.header.show {
+  opacity: 1;
+}
+
+.header-left a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.header-right nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-right: 40px;
+}
+
+.header-right nav ul li {
+  margin-left: 10px;
+}
+
+.header-right nav ul li a {
+
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.header-right nav ul li a.active {
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #242424; /* Barva pozadí */
+  color: white; /* Barva textu */
+  text-decoration: none;
+  border-radius: 5px; /* Zaoblení rohů */
+  
+}
+
+/* Galerie */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.work-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 65%;
+  height: auto;
+  margin: 10px auto; /* Zarovnání na střed */
+}
+
+@media (max-width: 767px) {
+  /* Obrázky na mobilní obrazovce */
+  .work-image {
+    max-width: 100%; /* Zmenšení obrázků na 80% */
+  }
+  .intro-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-content p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  
+}
+
+/* Patička */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
